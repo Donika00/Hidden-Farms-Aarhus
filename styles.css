@@ -1,0 +1,247 @@
+/* ------------------ Global css rules -------------------- */
+
+/* This resets margin and padding for all html elements. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This sets css rules for the html document. /*
+/* Can be overwritten by more specific css rules. */
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #ddfadf;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #c7e9c0 !important;
+}
+
+
+.nav-icon {
+  display: block; /* Make sure the icons are block elements */
+  width: 35px;
+  height: 3px;
+  background-color: #000 !important;
+  margin: 8px 0;
+}
+
+
+.navbar-toggler {
+  border: none; 
+  background-color: transparent; 
+  padding: 10px; 
+  cursor: pointer; 
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  background-color: transparent; 
+  box-shadow: none;
+  outline: none; 
+}
+
+.offcanvas {
+  background-color: #c7e9c0 !important;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 1px solid #115d33;
+}
+
+.fa-chevron-right {
+  margin-top: 8px;
+  float: right;
+}
+
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+
+select {
+  padding: 30px;
+  padding-left: 40px;
+  border-radius: 5px;
+  appearance: none;
+  background-color: #c7e9c0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" stroke="black" stroke-width="1.5"><path d="M1 2 L5 5 L9 2" /></svg>');
+  background-size: 20px 15px, 10px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 10px center, calc(100% - 10px) center;
+  cursor: pointer;
+  border: none;
+}
+
+select option {
+  padding: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.uk-flag::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg");
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.dk-flag::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg");
+  background-size: cover;
+  margin-right: 5px;
+}
+
+/*Body styling */
+
+.responsive {
+  width: 100%;
+  margin: 0 auto; 
+  box-sizing: border-box; 
+}
+
+.hero-section {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: calc(100vh - 100px);
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main-page-background-image {
+  width: 100%;
+  height: 100%;
+}
+
+.main-page-background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+}
+
+.greeting-message {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 32px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  background-color: rgba(240, 240, 240, 0.9); /* Lighter grey with opacity */
+  padding: 20px 80px 20px 80px;
+}
+
+.section-page {
+  padding: 0 50px 0 50px;
+}
+
+.main-page-images {
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.explore-btn {
+  padding: 10px;
+  width: 139px;
+  height: 38px;
+  background-color: #c7e9c0;
+  font-weight: 400;
+}
+
+.explore-farms {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-page-background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.page-title {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 32px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  background-color: rgba(240, 240, 240, 0.9); /* Lighter grey with opacity */
+  padding: 20px 80px 20px 80px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card {
+  transition: transform 0.5s;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-weight: bold;
+  text-align: center;
+}
+
+.organic-farms {
+  margin: 120px 0 120px 0;
+}
+
+.farm-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+
+.fa-facebook {
+  height: 24px;
+  margin-left: 20px;
+}
+
+.fa-instagram {
+  height: 24px;
+}
+
+.fa-arrow-left {
+  height: 24px;
+}
+
+/* Footer */
+
+.footer-links {
+  text-align: center;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: none;
+}
